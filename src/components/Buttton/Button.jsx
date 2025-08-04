@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './Button.module.css'
 
-const Button = ({isscnbtn, icon, text}) => {
+const Button = ({isscnbtn, icon, text, ...rest}) => {
   return (
     <div>
-        <button className={isscnbtn ? styles.scnbtn : styles.prim_btn}>
+        <button {...rest}  className={isscnbtn ? styles.scnbtn : styles.prim_btn}>
             {icon}
             {text}
         </button>
