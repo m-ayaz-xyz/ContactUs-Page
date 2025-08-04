@@ -49,7 +49,6 @@ const Contactform = () => {
           <div className={styles.submitbtn}>
             <Button
               text="Submit"
-              // icon={<MdMessage fontSize="24px" />}
             />
           </div>
           <div>{name + " " + email + " " + text}</div>
